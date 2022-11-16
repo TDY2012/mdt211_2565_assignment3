@@ -10,6 +10,7 @@ class CircularLinkedList<T> where T : struct
         if(this.head == null)
         {
             this.head = node;
+            this.head.SetNext(node);
         }
         else
         {
